@@ -6,7 +6,7 @@ Este proyecto es una aplicación web moderna que funciona como una **Pokédex in
 
 ### 1. API: [PokeAPI](https://pokeapi.co/)
 Para alimentar el proyecto con datos reales, se utilizó la **RESTful Pokémon API**:
-* **Consumo Dinámico:** Se obtienen datos como nombres, tipos e imágenes de alta calidad (`official-artwork`).
+* **Consumo Dinámico:** Se obtienen datos como nombres, tipos e imágenes de alta calidad.
 * **Eficiencia:** Se realizan consultas específicas por nombre para optimizar la transferencia de datos.
 
 ### 2. Next.js 15 (Framework)
@@ -21,7 +21,7 @@ Se implementaron las funciones más recientes del framework para garantizar un r
 ### 3. Tailwind CSS (Diseño Responsivo)
 El diseño se construyó bajo la filosofía de "móvil primero":
 * **Breakpoints (`sm`, `lg`):** La interfaz es totalmente responsiva. En dispositivos pequeños, el menú es horizontal y superior; en pantallas grandes, se transforma en un menú lateral fijo.
-* **Estética Moderna:** Uso de colores de la paleta `slate` para el modo oscuro, con acentos en colores clásicos de Pokémon (Rojo y Amarillo).
+* **Estética Moderna:** Uso de colores de la paleta `slate` para el modo oscuro.
 * **Scroll Independiente:** El menú lateral y el área de contenido tienen sus propios sistemas de desplazamiento para mejorar la usabilidad.
 
 
