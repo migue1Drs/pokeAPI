@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 PokéApp - Catálogo Dinámico con Next.js
 
-## Getting Started
+Este proyecto es una aplicación web moderna que funciona como una **Pokédex interactiva**. El objetivo principal es permitir la exploración de Pokémon a través de una interfaz fluida, con navegación lateral persistente y carga de datos en tiempo real.
 
-First, run the development server:
+## 🚀 Tecnologías y Herramientas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. API: [PokeAPI](https://pokeapi.co/)
+Para alimentar el proyecto con datos reales, se utilizó la **RESTful Pokémon API**:
+* **Consumo Dinámico:** Se obtienen datos como nombres, tipos e imágenes de alta calidad (`official-artwork`).
+* **Eficiencia:** Se realizan consultas específicas por nombre para optimizar la transferencia de datos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Next.js 15 (Framework)
+Se implementaron las funciones más recientes del framework para garantizar un rendimiento óptimo:
+* **App Router:** Organización de rutas basada en el sistema de archivos dentro de la carpeta `/app`.
+* **Rutas Dinámicas (`[name]/page.tsx`):** Uso de parámetros en la URL para generar cientos de páginas de Pokémon utilizando un solo archivo de diseño.
+* **Server Components:** La lógica de obtención de datos (`fetch`) se ejecuta en el servidor, mejorando la velocidad de carga inicial.
+* **Layouts Persistentes:** Implementación de un diseño de "Sidebar" (barra lateral) que no se recarga al navegar entre diferentes Pokémon, manteniendo el estado de la aplicación.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+### 3. Tailwind CSS (Diseño Responsivo)
+El diseño se construyó bajo la filosofía de "móvil primero":
+* **Breakpoints (`sm`, `lg`):** La interfaz es totalmente responsiva. En dispositivos pequeños, el menú es horizontal y superior; en pantallas grandes, se transforma en un menú lateral fijo.
+* **Estética Moderna:** Uso de colores de la paleta `slate` para el modo oscuro, con acentos en colores clásicos de Pokémon (Rojo y Amarillo).
+* **Scroll Independiente:** El menú lateral y el área de contenido tienen sus propios sistemas de desplazamiento para mejorar la usabilidad.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
