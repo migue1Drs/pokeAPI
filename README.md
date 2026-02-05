@@ -14,14 +14,13 @@ Se implementaron las funciones más recientes del framework para garantizar un r
 * **App Router:** Organización de rutas basada en el sistema de archivos dentro de la carpeta `/app`.
 * **Rutas Dinámicas (`[name]/page.tsx`):** Uso de parámetros en la URL para generar cientos de páginas de Pokémon utilizando un solo archivo de diseño.
 * **Server Components:** La lógica de obtención de datos (`fetch`) se ejecuta en el servidor, mejorando la velocidad de carga inicial.
-* **Layouts Persistentes:** Implementación de un diseño de "Sidebar" (barra lateral) que no se recarga al navegar entre diferentes Pokémon, manteniendo el estado de la aplicación.
+* **Layouts Persistentes:** Implementación de un diseño de una barra lateral que no se recarga al navegar entre diferentes Pokémon, manteniendo el estado de la aplicación.
 
 
 
 ### 3. Tailwind CSS (Diseño Responsivo)
 El diseño se construyó bajo la filosofía de "móvil primero":
 * **Breakpoints (`sm`, `lg`):** La interfaz es totalmente responsiva. En dispositivos pequeños, el menú es horizontal y superior; en pantallas grandes, se transforma en un menú lateral fijo.
-* **Estética Moderna:** Uso de colores de la paleta `slate` para el modo oscuro.
 * **Scroll Independiente:** El menú lateral y el área de contenido tienen sus propios sistemas de desplazamiento para mejorar la usabilidad.
 
 
