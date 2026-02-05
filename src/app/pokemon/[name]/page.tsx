@@ -1,8 +1,6 @@
-// app/pokemon/[name]/page.tsx
 import React from 'react'
 import Link from "next/link";
 
-// 1. Tipado simplificado para lo que necesitamos
 interface PokemonData {
   name: string;
   types: Array<{
@@ -80,4 +78,5 @@ export default async function PokemonDetail(props: PokemonProps) {
       </div>
     </div>
   );
+
 }
