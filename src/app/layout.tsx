@@ -39,14 +39,14 @@ const menuPokemon = [
         
    
         <header className="h-20 bg-slate-900 text-white shadow-lg border-b-4 border-black z-30 shrink-0 flex items-center">
-          <div className="w-full px-6">
-            <h1 className="text-3xl font-black tracking-tighter uppercase italic">
+          <div className="w-full px-4 sm:px-6">
+            <h1 className="text-2xl sm:text-3xl font-black tracking-tighter uppercase italic">
               Pokemon 
             </h1>
           </div>
         </header>
 
-        <div className="flex flex-1 overflow-hidden">
+        <div className="flex flex-1 overflow-hidden flex-col lg:flex-row">
           
          
           <nav className="hidden lg:flex w-64 bg-slate-800 border-r border-slate-700 flex-col z-20">
@@ -70,7 +70,7 @@ const menuPokemon = [
           </nav>
 
         
-          <nav className="lg:hidden bg-slate-800 border-b border-slate-700 overflow-x-auto whitespace-nowrap p-4 shrink-0">
+          <nav className="lg:hidden bg-slate-800 border-b border-slate-700 overflow-x-auto whitespace-nowrap p-4 shrink-0 w-full">
              <ul className="flex gap-4">
                 {menuPokemon.map((p) => (
                   <li key={p.slug}>
@@ -83,8 +83,8 @@ const menuPokemon = [
           </nav>
 
           
-          <main className="flex-1 overflow-y-auto bg-slate-50 dark:bg-slate-950">
-            <div className="max-w-4xl mx-auto px-6 py-10">
+          <main className="flex-1 overflow-y-auto bg-slate-50 dark:bg-slate-950 w-full">
+            <div className="max-w-4xl mx-auto px-4 py-6 sm:px-6 sm:py-10">
               {children}
             </div>
             
