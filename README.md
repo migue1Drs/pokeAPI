@@ -1,8 +1,8 @@
-# 📝 PokéApp - Catálogo Dinámico con Next.js
+#  PokéApp - Catálogo Dinámico con Next.js
 
 Este proyecto es una aplicación web moderna que funciona como una **Pokédex interactiva**. El objetivo principal es permitir la exploración de Pokémon a través de una interfaz fluida, con navegación lateral persistente y carga de datos en tiempo real.
 
-## 🚀 Tecnologías y Herramientas
+##  Tecnologías y Herramientas
 
 ### 1. API: [PokeAPI](https://pokeapi.co/)
 Para alimentar el proyecto con datos reales, se utilizó la **RESTful Pokémon API**:
